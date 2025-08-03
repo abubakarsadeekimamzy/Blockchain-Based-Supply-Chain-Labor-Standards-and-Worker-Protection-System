@@ -1,0 +1,24 @@
+[project]
+name = 'Blockchain-Based-Supply-Chain-Labor-Standards-and-Worker-Protection-System'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.child-labor-prevention]
+path = 'contracts/child-labor-prevention.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.factory-conditions]
+path = 'contracts/factory-conditions.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
